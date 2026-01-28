@@ -5,6 +5,16 @@ This repository contains the PostgreSQL scripts used to engineer the data pipeli
 and perform Exploratory Data Analysis (EDA) to drive the strategic recovery roadmap and PowerBi Visualization to visualize insights, track KPIs, 
 and inform actionable strategies to rebuild customer trust and optimize operations.
 
+## Key Challenges:
+
+1. Negative Social Media Buzz: The company is experiencing a surge in negative social media conversations about its products and customer service. These conversations are damaging its brand image.
+
+2. Customer Complaints: Complaints related to product defects, delays in customer support response, and billing issues have been rising, leading to a drop in customer satisfaction.
+
+3. Product Recalls: Recent product recalls have received significant media attention, causing panic among customers and stakeholders.
+
+4. Competitive Pressure: Rivals are gaining market share by exploiting AfriTech Electronics Ltd.’s reputation challenges.
+
 ## 🛠️ Technical Workflow
 1. Data Collection & Schema Initialization
 
@@ -29,29 +39,24 @@ Renaming & Dropping Columns: Standardized TransactionDate to InteractionDate in 
 Validation: Performed duplicate checks and handled NULL values in critical fields like CrisisEventTime.
 
 ## 📊 Exploratory Data Analysis (EDA) Highlights
-Engagement & Sentiment Paradox
 
 Queries were executed to quantify the impact of negative buzz across platforms:
 
-Aggregated Engagement: Identified platforms with the highest total and average "Likes" and "Comments".
+- Aggregated Engagement: Identified platforms with the highest total and average "Likes" and "Comments".
 
-Sentiment Distribution: Quantified the "Sentiment Neutralization" where negative sentiment (40.84%) rivals positive perception.
+- Sentiment Distribution: Quantified the "Sentiment Neutralization" where negative sentiment (40.84%) rivals positive perception.
 
-Operational Efficiency (Crisis Response)
+- Operational Efficiency (Crisis Response)
 
-Analyzed the support team's ability to mitigate PR risks:
+- Analyzed the support team's ability to mitigate PR risks:
 
 Response Velocity: Calculated Min, Max, and Average response days (firstresponsetime - crisiseventtime).
 
-Resolution Audit: Tracked the 47.59% resolution rate against unresolved crisis events.
+- Resolution Audit: Tracked the 47.59% resolution rate against unresolved crisis events.
 
-Financial & Product Risk
+- Recall Ratio: Aggregated the total PurchaseAmount for recalled products ($116M) vs. successful transactions.
 
-Linked customer demographics to product failures:
-
-Recall Ratio: Aggregated the total PurchaseAmount for recalled products ($116M) vs. successful transactions.
-
-Regional Analysis: Joined CustomerData and TransactionData to identify top 15 regions by customer volume and recall frequency.
+- Regional Analysis: Joined CustomerData and TransactionData to identify top 15 regions by customer volume and recall frequency.
 
 ## 📂 Key SQL Scripts
 The full script includes:
@@ -80,13 +85,17 @@ Regional Treemap: Highlights high-density risk zones like Washington and West Vi
 
 Engagement Paradox: Bar charts showing that high-engagement platforms (TikTok/Instagram) harbor the most negative buzz.
 
+## Dashboard Image
+![Dashboard Image](Afritech.png)
+![Dashboard Image](Afritech1.png)
 ## key Recommendations
 
 1. Fix the Quality of Laptops & Phones: These are the biggest sellers but also have the most returns; theres a need to fix the manufacturing issues here first to stop losing money.
 
 2. Focus Support on TikTok & Instagram: Most of the negative comments are happening on these two apps, the team needs to be most active there to reply to customers.
 
-3. Prioritize Top 3 States: Washington, West Virginia, and Utah have your highest number of customers; Afritech should focus repair and apology efforts there to keep your biggest markets happy.
+3. Prioritize Top 3 States: Washington, West Virginia, and Utah have the highest number of customers; Afritech should focus repair and apology efforts there to keep your biggest markets happy.
 
 4. Speed Up Response Time :  Currently, over half of customer complaints are ignored or unresolved; there is a need to answer people faster to stop them from going to competitors.
 
+5.Returning and VIP customers spend the most, but product recalls affect them the most too. Offer them extra support or discounts to keep loyalty
