@@ -91,7 +91,7 @@ Engagement Paradox: Bar charts showing that high-engagement platforms (TikTok/In
 ![Dashboard Image](Afritech.png)
 ![Dashboard Image](Afritech1.png)
 
-[![View Interactive Dashboard](https://img.shields.io/badge/View-Dashboard_Script-blue)](https://app.powerbi.com/groups/me/reports/1d05eb38-8ea0-4410-8108-1cd96a0233d2/b1e88f7f178179073b1c?experience=power-bi)
+[![View Interactive Dashboard](https://img.shields.io/badge/View-Dashboard-blue)](https://app.powerbi.com/groups/me/reports/1d05eb38-8ea0-4410-8108-1cd96a0233d2/b1e88f7f178179073b1c?experience=power-bi)
 
 ## key Recommendations
 
