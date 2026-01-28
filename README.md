@@ -38,6 +38,8 @@ Renaming & Dropping Columns: Standardized TransactionDate to InteractionDate in 
 
 Validation: Performed duplicate checks and handled NULL values in critical fields like CrisisEventTime.
 
+[![View SQL Script](https://img.shields.io/badge/View-SQL_Script-blue)](https://github.com/deresamad/Afritech-/blob/main/Afritech_Analysis.sql)
+
 ## 📊 Exploratory Data Analysis (EDA) Highlights
 
 Queries were executed to quantify the impact of negative buzz across platforms:
